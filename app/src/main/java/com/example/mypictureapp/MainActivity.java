@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
+import com.squareup.picasso.Picasso;
+
 public class MainActivity extends AppCompatActivity {
 
     private ImageView imageView;
@@ -14,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Picasso.get().load("https://i.imgur.com/DvpvklR.png").into(imageView);
+        imageView = findViewById(R.id.image_view);
+        Picasso.get().load("https://images.app.goo.gl/Yty8iAjZYKP8UWAF7").into(imageView);
     }
 }
