@@ -17,6 +17,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         imageView = findViewById(R.id.image_view);
-        Picasso.get().load("https://images.app.goo.gl/Yty8iAjZYKP8UWAF7").into(imageView);
+        Picasso.get().load("https://i.imgur.com/WWptDmQ.jpeg").into(imageView);
     }
 }
